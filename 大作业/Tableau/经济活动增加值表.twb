@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='202209_Gross Value Added by Economic Activity' inline='true' name='federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='202209_Gross Value Added by Economic Activity' name='textscan.0cuk4o80thxrl919kw0j9124u28n'>
+            <connection class='textscan' directory='/Users/owemshu/Desktop/Courses/大数据可视化/作业/大作业/Data of Economics/联合国数据' filename='202209_Gross Value Added by Economic Activity.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0cuk4o80thxrl919kw0j9124u28n' name='202209_Gross Value Added by Economic Activity.csv' table='[202209_Gross Value Added by Economic Activity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='Region/Country/Area' ordinal='0' />
+            <column datatype='string' name='Gross Value added by kind of economic activity' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Series' ordinal='3' />
+            <column datatype='real' name='Value' ordinal='4' />
+            <column datatype='string' name='Footnotes' ordinal='5' />
+            <column datatype='string' name='Source' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0cuk4o80thxrl919kw0j9124u28n' name='202209_Gross Value Added by Economic Activity.csv' table='[202209_Gross Value Added by Economic Activity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='Region/Country/Area' ordinal='0' />
+            <column datatype='string' name='Gross Value added by kind of economic activity' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Series' ordinal='3' />
+            <column datatype='real' name='Value' ordinal='4' />
+            <column datatype='string' name='Footnotes' ordinal='5' />
+            <column datatype='string' name='Source' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[202209_Gross Value Added by Economic Activity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region/Country/Area</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Region/Country/Area]</local-name>
+            <parent-name>[202209_Gross Value Added by Economic Activity.csv]</parent-name>
+            <remote-alias>Region/Country/Area</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[202209_Gross Value Added by Economic Activity.csv_9690DEEB857E434FA1F416B5E2B94028]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Value added by kind of economic activity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gross Value added by kind of economic activity]</local-name>
+            <parent-name>[202209_Gross Value Added by Economic Activity.csv]</parent-name>
+            <remote-alias>Gross Value added by kind of economic activity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[202209_Gross Value Added by Economic Activity.csv_9690DEEB857E434FA1F416B5E2B94028]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[202209_Gross Value Added by Economic Activity.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[202209_Gross Value Added by Economic Activity.csv_9690DEEB857E434FA1F416B5E2B94028]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Series</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Series]</local-name>
+            <parent-name>[202209_Gross Value Added by Economic Activity.csv]</parent-name>
+            <remote-alias>Series</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[202209_Gross Value Added by Economic Activity.csv_9690DEEB857E434FA1F416B5E2B94028]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[202209_Gross Value Added by Economic Activity.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[202209_Gross Value Added by Economic Activity.csv_9690DEEB857E434FA1F416B5E2B94028]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Footnotes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Footnotes]</local-name>
+            <parent-name>[202209_Gross Value Added by Economic Activity.csv]</parent-name>
+            <remote-alias>Footnotes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[202209_Gross Value Added by Economic Activity.csv_9690DEEB857E434FA1F416B5E2B94028]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source]</local-name>
+            <parent-name>[202209_Gross Value Added by Economic Activity.csv]</parent-name>
+            <remote-alias>Source</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[202209_Gross Value Added by Economic Activity.csv_9690DEEB857E434FA1F416B5E2B94028]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[Gross Value added by kind of economic activity]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='202209_Gross Value Added by Economic Activity.csv' datatype='table' name='[__tableau_internal_object_id__].[202209_Gross Value Added by Economic Activity.csv_9690DEEB857E434FA1F416B5E2B94028]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='202209_Gross Value Added by Economic Activity.csv' id='202209_Gross Value Added by Economic Activity.csv_9690DEEB857E434FA1F416B5E2B94028'>
+            <properties context=''>
+              <relation connection='textscan.0cuk4o80thxrl919kw0j9124u28n' name='202209_Gross Value Added by Economic Activity.csv' table='[202209_Gross Value Added by Economic Activity#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='Region/Country/Area' ordinal='0' />
+                  <column datatype='string' name='Gross Value added by kind of economic activity' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='string' name='Series' ordinal='3' />
+                  <column datatype='real' name='Value' ordinal='4' />
+                  <column datatype='string' name='Footnotes' ordinal='5' />
+                  <column datatype='string' name='Source' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='世界主流经济体经济活动增加值树图'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='25'>世界主流经济体</run>
+            <run fontalignment='1' fontcolor='#000000d8' fontname='PingFang SC' fontsize='25'>经济活动增加值树图</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='202209_Gross Value Added by Economic Activity' name='federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb'>
+            <column caption='Country' datatype='string' name='[Gross Value added by kind of economic activity]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Value]' derivation='Avg' name='[avg:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gross Value added by kind of economic activity]' derivation='None' name='[none:Gross Value added by kind of economic activity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[none:Gross Value added by kind of economic activity:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;Brazil&quot;' />
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Gross Value added by kind of economic activity:nk]' member='&quot;United States of America&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[none:Year:qk]' included-values='in-range'>
+            <min>2015</min>
+            <max>2020</max>
+          </filter>
+          <slices>
+            <column>[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[none:Gross Value added by kind of economic activity:nk]</column>
+            <column>[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[avg:Value:qk]' />
+              <color column='[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[avg:Value:qk]' />
+              <text column='[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[none:Year:qk]' />
+              <text column='[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[none:Gross Value added by kind of economic activity:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5DD97293-0ED1-41BF-80F0-DC3857067F0B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='世界主流经济体经济活动增加值树图'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[avg:Value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[avg:Value:qk]</field>
+            <field>[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[none:Gross Value added by kind of economic activity:nk]</field>
+            <field>[federated.1wqyuyh1jdrxxr1e8fp4z0xgkoeb].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AED8E0E2-274F-4686-847B-360628065458}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='世界主流经济体经济活动增加值树图' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
